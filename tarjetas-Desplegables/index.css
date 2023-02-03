@@ -1,0 +1,27 @@
+h1{
+    text-align: center;
+}
+
+picture{
+    display: flex;
+    width: 90em;
+    height: 37em;
+}
+
+.grid{
+    margin: 1em;
+}
+
+img{
+    width: 0;
+    flex-grow: 1;
+    object-fit: cover;
+    border-radius: 3em;
+    padding: 0.2em;
+    transition: .5s ease;
+}
+
+picture img:hover{
+    width: 50em;
+}
+
