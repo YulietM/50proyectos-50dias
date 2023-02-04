@@ -1,11 +1,26 @@
+* {
+    padding: 2px;
+    margin: 0px;
+}
+
+@font-face {
+    font-family: startjedi;
+    src: url(starjedi/Starjedi.ttf);
+    font-style: normal;
+    font-weight: normal;
+}
+
 h1{
     text-align: center;
+    font-family: startjedi;
+    font-size: 3em;
 }
 
 picture{
     display: flex;
     width: 90em;
     height: 37em;
+    flex-wrap: wrap;
 }
 
 .grid{
