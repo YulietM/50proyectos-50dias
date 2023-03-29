@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Linea de Progreso</title>
+    <link rel="stylesheet" href="./index.css" />
+    <link rel="script" href="./index.js" />
+  </head>
+  <body>
+    <h1>Pasos de Progreso</h1>
+    <div class="container">
+      <ul class="progress">
+        <li class="activado"></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+        <li></li>
+      </ul>
+    </div>
+    <br />
+    <button type="button" (click)="anterior(position)">Anterior</button>
+    <button type="button" (click)="siguiente(position)">Siguiente</button>
+  </body>
+</html>

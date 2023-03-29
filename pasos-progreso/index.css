@@ -1,0 +1,74 @@
+h1 {
+    font-size: 42px;
+    text-align: center;
+    color: rgb(0, 0, 0);
+    padding: 40px;
+    padding-block-end: 140px;
+}
+
+.container{
+    width: 100%;
+}
+
+.progress {
+    counter-reset: step;
+}
+
+.progress li {
+    list-style-type: none;
+    float: left;
+    width: 14%;
+    position: relative;
+}
+
+.progress li::before {
+    content: counter(step);
+    counter-increment: step;
+    font-size: 1.3em;
+    color: rgb(8, 8, 8);
+    width: 40px;
+    height: 40px;
+    line-height: 35px;
+    border: 4px solid rgb(23, 59, 166);
+    display: block;
+    text-align: center;
+    margin: 0, auto, 10px, auto;
+    border-radius: 50%;
+    background-color: rgb(254, 254, 254);
+}
+
+.progress li::after {
+    content: '';
+    position: absolute;
+    width: 100%;
+    height: 1px;
+    background-color: rgb(24, 24, 164);
+    top: 20px;
+    left:-50%;
+    z-index: -1;
+}
+
+.progress li:first-child::after {
+    content: none;
+}
+
+.progress li.activado {
+    color :rgb(49, 207, 62);
+}
+
+.progress li.activado::before {
+    color: rgb(56, 188, 44);
+}
+
+.progress li.activado + li::after{
+    color :rgb(41, 28, 154);
+}
+
+button {
+    font-size: 1em;
+    background-color: blue;
+    color: aliceblue;
+    width: 110px;
+    height: 40px;
+    border-radius: 13%;
+}
